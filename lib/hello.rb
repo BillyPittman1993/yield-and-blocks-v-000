@@ -4,4 +4,4 @@ def yielding_with_arguments(num)
   puts "now we are back in the method"
 end
 
-yielding_with_arguments { puts "the method has yielded to the block!" }
+yielding_with_arguments(2) {|i| puts i * 2}
